@@ -21,15 +21,59 @@
 	a {
 		color: #BFAC80
 	}
+	body {
+		position: relative;
+	}
+
+	body img.logo {
+		display: block;
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		top: 340px;
+	}
+	div{
+		position: relative;
+	}
+	div.ahoj{
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		top:800px;
+	}
+
+	div.main-copy{
+		position: absolute;
+		width:834px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		top:1080px;
+
+
+	}
+
+	div.footer{
+		position: absolute;
+		width: 250px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		top:1300px;
+		padding: 40px;
+	}
 
 </style>
 </head>
 <body style="background-color: #F6F6F6;">
-	<img src="logo.png" alt="MM-logo"; width="92px"; height="92px">
-	<h1 style="font-size: 80px; color: #BFAC80; font-family: avenir; text-align:center;">Ahoj!</h1>
+	<div>
+		<img class="logo" src="https://raw.githubusercontent.com/mykemorales/mykemorales.github.io/master/mmlogo.png" alt="MM-logo"; width="92px"; height="92px">
+	</div>
+	<div class="ahoj">
+		<h1 style="font-size: 80px; color: #BFAC80; font-family: avenir; text-align:center ">Ahoj!</h1>
 
-	<p style="font-family: avenir; text-align:center; color: #9B9B9B; font-size: 16px;"><q>Hello</q> in Czech</p>
-
+		<p style="font-family: avenir; text-align:center; color: #9B9B9B; font-size: 16px;"><q>Hello</q> in Czech</p>
+	</div>
 	<div class="main-copy">
 		<h3>I am <em>Mike Morales</em></h3> 
 
@@ -41,8 +85,10 @@
 
 		<h3><strong><a href="http://www.twitter.com/mykemorales" target="_blank">Twitter</a></strong> and <strong><a href="http://www.instagram.com/mykemorales" target="_blank">Instagram</a></strong>.</h3>
 	</div>
-	<h4 style="color: #4C4C4C; text-align: center; font-family: avenir; font-size: 18px;"><a href="mailto:morales@webhouse.cz" style="color: #4C4C4C; ">Let's talk</a>.</h4>
-	<p style="text-align: center; font-family:avenir; font-size; 14px; color: #BFAC80;">Copyright © 2016 Mike Morales</p>
+	<div class="footer">
+		<h4 style="color: #4C4C4C; text-align: center; font-family: avenir; font-size: 18px;"><a href="mailto:morales@webhouse.cz" style="color: #4C4C4C; ">Let's talk</a>.</h4>
+		<p style="text-align: center; font-family:avenir; font-size; 14px; color: #BFAC80;">Copyright © 2016 Mike Morales</p>
+	</div>
 
 
 <script>
