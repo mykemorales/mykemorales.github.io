@@ -6,7 +6,7 @@
   <title>Mike Morales</title>
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="icon" href="https://raw.githubusercontent.com/mykemorales/mykemorales.github.io/master/favicon.png" type="image/gif" sizes="16x16">
+<link rel="icon" href="https://raw.githubusercontent.com/mykemorales/mykemorales.github.io/master/favicon.png" type="image/gif" sizes="16x16">
   
   <style>
 
@@ -20,6 +20,24 @@
  h1, h2, h3, h4 {
  	font-family: avenir;
  	line-height: 2.4;
+ 	position: relative;
+    -webkit-animation: mymove 5s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: mymove 5s;
+    animation-delay: 1s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 300px;}
+}
+
+@keyframes mymove {
+    from {bottom: 0px;}
+    to {bottom: 300px;}
  }
  h1{
  	font-size: 80px;
@@ -32,7 +50,7 @@
   	color: #E7CF97;
   }
  img {
- 	padding-top: 220px;
+ 	padding-top: 280px;
  }
   </style>
   </head>
@@ -52,7 +70,7 @@
 
   	<div class="container">
   		<div class="text-center">
-  			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 text-center">
+  			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 text-center" style="top: 520px;">
   				<h1><strong>Ahoj!</strong></h1>
   				<h4>"Hello" in Czech</h4>
   				<h3>I am Mike Morales <br>a User Experience Designer at <strong><a href="http://www.webhouse.cz" target="_blank">WEBHOUSE</a></strong>. You can have a look at
