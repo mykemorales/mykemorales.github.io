@@ -6,7 +6,7 @@
         <title>Mike Morales⚡| Designer</title>
         <link rel="icon" type="image/png" href="https://cloud.githubusercontent.com/assets/9805324/25555091/038b5dc0-2cde-11e7-8883-7cbaef0ca107.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
+        <script src="/scroll-up-bar.min.js"></script>
         <style>
             body{
                 background-color: #F7F7F7;
@@ -125,7 +125,7 @@
     </head>
     <body>
     <!--navigation-->
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top" id="topbar"style="position:absolute;">
             <div class="container">
               <div class="navbar-header">
                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -260,6 +260,7 @@
   				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   				ga('create', 'UA-84546818-1', 'auto');
   				ga('send', 'pageview');
-			</script> 
+			</script>
+   <script>$('#topbar').scrollupbar();</script>
    </body>
 </html>
