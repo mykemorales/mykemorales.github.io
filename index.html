@@ -1,231 +1,434 @@
 <!DOCTYPE html>
-<html>
-   <head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XWQ7MLDYXD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XWQ7MLDYXD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XWQ7MLDYXD');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike Morales — Senior Product Designer</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --digital-sand: #E9DDC3;
+      --starlight: #F0D3A0;
+      --sunlight: #FFD375;
+      --ember: #F08669;
+      --silverlight: #F1EFEB;
+      --charcoal: #1F1F1F;
+      --black-hole: #1B1918;
+    }
 
-  gtag('config', 'G-XWQ7MLDYXD');
-</script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Mike Morales ☀︎ Designer</title>
-        <link rel="icon" type="image/png" href="https://user-images.githubusercontent.com/9805324/116697309-4f5ace00-a9c3-11eb-9b5a-c8f2a8811018.png">
-        <!--bootstrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script src="/scroll-up-bar.min.js"></script>
-        <style>
-            body{
-                background-color: #1B1918;
-            }
-            navbar-text{
-                font-family: 'Inter' sans-serif;
-                color: #F0D3A0;
-            }
-	           ::selection {
-  		           background: #FFD375; /* WebKit/Blink Browsers */
-                 color: #FAFAFA;
-	    }
-    	    ::-moz-selection {
-  		        background: #FFD375; /* Mozilla Browser */
-    		      color: #FAFAFA;
-	    }
-            .navbar-default {
-                background-color: #1B1918;
-                border-color: #E9DDC3;
-            }
-            /* Link */
-            .navbar-default .navbar-nav > li > a {
-                color: #F0D3A0;
-	              -webkit-transition: .5s;
-            }
-            .navbar-default .navbar-nav > li > a:hover,
-            .navbar-default .navbar-nav > li > a:focus {
-                color: #F08669;
-                text-decoration: line-through;
-            }
-            h1{
-                font-size: 3.6em;
-                font-family: 'Inter', sans-serif;
-                color: #F0D3A0;
-                text-decoration: none;
-            }
-            a b{
-                color: #F0D3A0;
-	              -webkit-transition: .5s;
-            }
-            a b:hover{
-                text-decoration: line-through;
-                color: #F08669;
-            }
-            ul.social{
-              list-style-type: none;
-            }
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    ::selection {
+      background-color: #84724B;
+      color: #fff;
+    }
 
-            @media screen and (max-width: 2556px){
-               h1{
-                   font-size: 12em;
-                   line-height: .9em;
-               }
-               p.intro{
-                 font-size: 2.2em;
-                 margin-top: 20px;
-               }
-               p.lead{
-                 font-size: 1.6em;
-               }
-           }
-             @media screen and (max-width: 2020px){
-                h1{
-                    font-size: 10em;
-                    line-height: .9em;
-                }
-                p.intro{
-                  font-size: 2em;
-                  margin-top: 20px;
-                }
-                p.lead{
-                  font-size: 1.6em;
-                }
-            }
-            @media screen and (max-width: 1200px){
-                h1{
-                    font-size: 8em;
-                    line-height: .9em;
-                }
-                p.intro{
-                  font-size: 2em;
-                  margin-top: 20px;
-                }
-                p.lead{
-                  font-size: 1.6em;
-                }
-            }
-            @media screen and (max-width: 860px){
-                h1{
-                    font-size: 8em;
-                    line-height: .9em;
-                }
-                p.intro{
-                  font-size: 1.6em;
-                  margin-top: 20px;
-                }
-                p.lead{
-                  font-size: 1.4em;
-                }
-            }
-             @media screen and (max-width: 720px){
-                h1{
-                    font-size: 6em;
-                    line-height: .9em;
-                }
-                p.intro{
-                  font-size: 2em;
-                  margin-top: 20px;
-                }
-                p.lead{
-                  font-size: 1.1em;
-                }
-            }
+    html { scroll-behavior: smooth; }
 
-            @media screen and (max-width: 560px) {
-                h1{
-                    font-size: 6em;
-                    line-height: .9em;
-                    margin-top: 10%;
-                }
-                h2{
-                    font-size: 1.6em;
-                    line-height: 1.6;
-                }
-                p.intro{
-                  font-size: 1.8em;
-                  margin-top: 20px;
-                }
-                p.lead{
-                  font-size: 1.1em;
-                }
-            }
-            @media screen and (max-width: 375px) {
-                h1{
-                    font-size: 5.2em;
-                    line-height: .9em;
-                    margin-top: 20%;
-                }
-                h2{
-                    font-size: 1.4em;
-                    line-height: 1.4;
-                }
-                p.intro{
-                  font-size: 1.6em;
-                  margin-top: 20px;
-                }
-            }
-        </style>
-    </head>
-    <body>
-    <!--navigation-->
-        <nav class="navbar navbar-default navbar-fixed-top" id="topbar"style="position:absolute;">
-            <div class="container">
-              <div class="navbar-header">
-                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                       <span class="icon-bar" style="color: #BFAC80;"></span>
-                       <span class="icon-bar" style="color: #151E3F;"></span>
-                       <span class="icon-bar" style="color: #F08669;"></span>
-                  </button>
-                  <a class="navbar-brand navbar-left" href="www.moralesmike.com" style="color:#F0D3A0; font-weight: bold;">mikemorales</a>
-               </div>
-               <div class="collapse navbar-collapse" id="myNavbar">
-                   <ul class="nav navbar-nav navbar-right">
-		                   <li>
-			                    <a href="https://drive.google.com/file/d/1TWCVT-Hoyz41yI7WAehwynnaKP7pgTfc/view?usp=sharing" target="_blank" style="font-size: 16px;">Résumé</a>
-		                   </li>
-                       <li>
-                          <a href="mailto:hello@moralesmike.com" target="_top" style="font-size:16px;">Say Hello!</a>
-                       </li>
-                   </ul>
-               </div>
-            </div>
-        </nav>
+    body {
+      background: var(--black-hole);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-top: 72px;
+    }
 
-    <!--introduction-->
-      <div class="container">
-            <div class="col-xxl-10 col-xxl-offset-2 col-xl-10 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-11 col-sm-10 col-sm-offset-1 col-xs-12">
-               <h1 style="padding-top:20%; font-weight:800;">
-                 Mike Morales
-               </h1>
-               <p class="intro" style="font-family: Frank Ruhl Libre; color:#F1EFEB; font-weight: medium; line-height:1.4em;">Your friendly neighborhood Product Designer**</p>
-               <hr style="color: #E90DC3; margin-top:48px;">
-            </div>
+    a { color: inherit; text-decoration: none; }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 48px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: var(--black-hole);
+      transform: translateY(0);
+      transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    nav.nav--hidden {
+      transform: translateY(-110%);
+    }
+
+    .logo {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--digital-sand);
+      letter-spacing: 0.01em;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      color: var(--starlight);
+      text-decoration: none;
+      background-image: linear-gradient(var(--ember), var(--ember));
+      background-position: 0 52%;
+      background-repeat: no-repeat;
+      background-size: 0% 1.5px;
+      transition: color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  background-size 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .nav-links a:hover {
+      color: var(--ember);
+      background-size: 100% 1.5px;
+    }
+
+    @media (max-width: 680px) {
+      nav {
+        padding: 22px 16px;
+        flex-wrap: nowrap;
+      }
+
+      .logo,
+      .nav-links a {
+        white-space: nowrap;
+      }
+
+      .nav-links {
+        flex: 0 1 auto;
+        gap: 16px;
+        justify-content: flex-end;
+      }
+    }
+
+    /* ── PAGE CONTENT ── */
+    .page-content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 68px 0 76px;
+    }
+
+    .hero__name {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 5px;
+      letter-spacing: 0.01em;
+    }
+
+    .hero__role {
+      font-size: 20px;
+      font-weight: 300;
+      color: var(--digital-sand);
+      margin-bottom: 24px;
+    }
+
+    .hero__bio {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.7;
+      color: var(--silverlight);
+    }
+
+    /* ── ABOUT ── */
+    .about {
+      padding-bottom: 72px;
+      scroll-margin-top: 80px;
+    }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.88);
+      margin-bottom: 18px;
+      letter-spacing: 0.02em;
+    }
+
+    .about p:not(.section-label) {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.7;
+      color: var(--silverlight);
+      margin-bottom: 18px;
+    }
+
+    .about p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about a {
+      color: var(--starlight);
+      font-weight: 500;
+      text-decoration: none;
+      background-image: linear-gradient(var(--ember), var(--ember));
+      background-position: 0 52%;
+      background-repeat: no-repeat;
+      background-size: 0% 1.5px;
+      transition: color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  background-size 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .about a:hover {
+      color: var(--ember);
+      background-size: 100% 1.5px;
+    }
+
+    /* ── CTA / CONTACT ── */
+    .cta {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 72px;
+      padding-bottom: 100px;
+    }
+
+    .cta__heading {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 34px;
+      font-weight: 400;
+      color: var(--digital-sand);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .cta__desc {
+      font-size: 18px;
+      color: var(--silverlight);
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .cta__location {
+      font-size: 16px;
+      color: var(--digital-sand);
+      margin-bottom: 44px;
+    }
+
+    .contact-block {
+      margin-bottom: 28px;
+    }
+
+    .contact-block__label {
+      font-size: 16px;
+      color: var(--silverlight);
+      margin-bottom: 8px;
+    }
+
+    .contact-email-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .copy-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      color: rgba(255, 255, 255, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: color 0.2s ease;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .copy-btn:hover {
+      color: var(--ember);
+    }
+
+    .copy-btn__tooltip,
+    .copy-btn__hover-tip {
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      padding: 6px 12px;
+      border-radius: 6px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .copy-btn__hover-tip {
+      background: var(--black-hole);
+      color: var(--silverlight);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .copy-btn__tooltip {
+      background: var(--ember);
+      color: #fff;
+    }
+
+    .copy-btn:hover .copy-btn__hover-tip {
+      opacity: 1;
+    }
+
+    .copy-btn.copied .copy-btn__hover-tip {
+      opacity: 0;
+    }
+
+    .copy-btn.copied .copy-btn__tooltip {
+      opacity: 1;
+    }
+
+    .copy-btn.copied {
+      color: var(--ember);
+    }
+
+    .contact-block a {
+      font-size: 18px;
+      color: var(--starlight);
+      text-decoration: none;
+      background-image: linear-gradient(var(--ember), var(--ember));
+      background-position: 0 52%;
+      background-repeat: no-repeat;
+      background-size: 0% 1.5px;
+      transition: color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  background-size 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .contact-block a:hover {
+      color: var(--ember);
+      background-size: 100% 1.5px;
+    }
+
+    .social-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 7px;
+    }
+
+    .social-list a {
+      font-size: 18px;
+      color: var(--starlight);
+      text-decoration: none;
+      background-image: linear-gradient(var(--ember), var(--ember));
+      background-position: 0 52%;
+      background-repeat: no-repeat;
+      background-size: 0% 1.5px;
+      transition: color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  background-size 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .social-list a:hover {
+      color: var(--ember);
+      background-size: 100% 1.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">mikemorales</a>
+    <ul class="nav-links">
+      <li><a href="mmorales_resume_2026.pdf" target="_blank" rel="noopener noreferrer">resume</a></li>
+      <li><a href="#contact">say hello</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero__name">Mike Morales</p>
+      <p class="hero__role">Senior Product Designer · Enterprise systems specialist</p>
+      <p class="hero__bio">I partner with product and engineering leaders to turn complex problems into clear, high-impact experiences. With 10+ years designing at scale, I bring both strategic clarity and craft precision that senior teams need to ship confidently</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <p class="section-label">About</p>
+      <p>Currently, I am working at <a href="https://www.mckinsey.com" target="_blank" rel="noopener">McKinsey &amp; Company</a> as a Senior Product Designer.</p>
+      <p>Previously, I mentored Product Designers through <a href="https://careerfoundry.com/en/" target="_blank" rel="noopener">CareerFoundry</a>. I led design for the Business Process Automation platform Impress at <a href="https://www.quadient.com" target="_blank" rel="noopener">Quadient</a>. Before that, I was a building municipal websites with <a href="https://webhouse.cz" target="_blank" rel="noopener">WEBHOUSE</a> and commercial websites with <a href="https://www.kreatorium.cz" target="_blank" rel="noopener">Kreatorium</a>.</p>
+    </section>
+
+    <!-- CTA / CONTACT -->
+    <section class="cta" id="contact">
+      <h2 class="cta__heading">Let's build something that matters</h2>
+      <p class="cta__desc">I'm open to roles where I can operate at both the strategic and craft level, ideally in SaaS. If you're building something ambitious, let's talk.</p>
+      <p class="cta__location">Based in Czechia · Open to remote roles</p>
+
+      <div class="contact-block">
+        <p class="contact-block__label">Get in touch:</p>
+        <div class="contact-email-row">
+          <a href="mailto:hello@moralesmike.com">hello@moralesmike.com</a>
+          <button class="copy-btn" id="copy-email-btn" aria-label="Copy email address">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            <span class="copy-btn__hover-tip">Copy email to clipboard</span>
+            <span class="copy-btn__tooltip">Copied!</span>
+          </button>
         </div>
-        <!--End intro-->
-        <!--about-->
-        <div class="row" style="margin-bottom:8%;">
-            <div class="container">
-               <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-		            <p class="lead" style="font-family:Inter; color:#F1EFEB; font-weight: medium; margin:10px; line-height:1.6em; padding-top: 3%;">Currently, I am shaping experiences, products and processes at <a href="https://www.mckinsey.com" target="_blank" style="text-decoration:none;"><b>McKinsey & Company</b></a> as a Senior Product Designer.<br><br>Previously, I was at <a href="https://www.quadient.com" target="_blank" style="text-decoration:none;"><b>Quadient</b></a> designing the Business Process Automation platform Impress. Before that, I was building municipal websites with <a href="https://www.webhouse.cz" target="_blank" style="text-decoration:none;"><b>Webhouse</b></a> and commercial websites with <a href="https://www.kreatorium.cz" target="_blank" style="text-decoration:none;"><b>Kreatorium</b></a>.<br><br> Want to get in touch? Feel free to reach out at <a href="mailto:hello@moralesmike.com" target="_top" style="text-decoration:none;"><b>hello@moralesmike.com</b></a><br><br>Connect with me on: <br><a href="https://www.linkedin.com/in/mykemorales/" target="_blank" style="color: #E9DDC3; text-decoration:none;"><b>LinkedIn →</b></a> <br><a href="https://www.twitter.com/mykemorales/" target="_blank" style="color: #E9DDC3; text-decoration:none;"><b>Twitter →</b></a> <br><a href="https://www.dribbble.com/mykemorales/" target="_blank" style="color: #E9DDC3; text-decoration:none;"><b>Dribbble →</b></a> <br><a href="https://www.instagram.com/mykemorales/" target="_blank" style="color: #E9DDC3; text-decoration:none;"><b>Instagram →</b></a></p><br>
-                <hr style="color: #E90DC3; margin-top:24px;">
-                <span style=" color: #F1EFEB; font-family: Inter; margin-top: 8%;"><em>**</em> Not to be confused with Spider-Man, despite being involved in many web related activites.</span>
-               </div>
-            </div>
+      </div>
+
+      <div class="contact-block">
+        <p class="contact-block__label">Connect with me on:</p>
+        <div class="social-list">
+          <a href="https://www.linkedin.com/in/mykemorales/" target="_blank" rel="noopener">LinkedIn →</a>
+          <a href="https://x.com/MykeMorales" target="_blank" rel="noopener">Twitter (X) →</a>
+          <a href="https://dribbble.com/mykemorales" target="_blank" rel="noopener">Dribbble →</a>
         </div>
-       <!--This is the end of about-->
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-   <script>
-  				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  				ga('create', 'UA-84546818-1', 'auto');
-  				ga('send', 'pageview');
-			</script>
-   <script>$('#topbar').scrollupbar();</script>
-   <script src="/script.js"></script>
-   </body>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    // Hide nav on scroll down, reveal on scroll up
+    const nav = document.querySelector('nav');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        nav.classList.add('nav--hidden');
+      } else {
+        nav.classList.remove('nav--hidden');
+      }
+      lastScrollY = currentScrollY;
+    }, { passive: true });
+
+    // Copy email to clipboard
+    const copyBtn = document.getElementById('copy-email-btn');
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText('hello@moralesmike.com').then(() => {
+        copyBtn.classList.add('copied');
+        setTimeout(() => copyBtn.classList.remove('copied'), 2000);
+      });
+    });
+  </script>
+
+</body>
 </html>
