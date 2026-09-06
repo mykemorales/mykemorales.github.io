@@ -203,7 +203,7 @@
 
     @media (max-width: 680px) {
       nav {
-        padding: 22px 16px;
+        padding: 22px 24px;
         flex-wrap: nowrap;
       }
 
@@ -228,7 +228,7 @@
 
     @media (max-width: 680px) {
       .page-content {
-        padding: 0 16px;
+        padding: 0 24px;
       }
     }
 
@@ -621,7 +621,7 @@
     const footerDatetime = document.getElementById('footer-datetime');
     const pragueFormatter = new Intl.DateTimeFormat('en-US', {
       timeZone: 'Europe/Prague',
-      weekday: 'long',
+      weekday: 'short',
       year: 'numeric',
       month: 'long',
       day: 'numeric',
