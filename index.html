@@ -217,10 +217,6 @@
         gap: 16px;
         justify-content: flex-end;
       }
-
-      .page-content {
-        padding: 0 16px;
-      }
     }
 
     /* ── PAGE CONTENT ── */
@@ -228,6 +224,12 @@
       max-width: 720px;
       margin: 0 auto;
       padding: 0 64px;
+    }
+
+    @media (max-width: 680px) {
+      .page-content {
+        padding: 0 16px;
+      }
     }
 
     /* ── HERO ── */
@@ -490,7 +492,6 @@
   <nav>
     <a href="index.html" class="logo">mikemorales</a>
     <ul class="nav-links">
-      <li><a href="mmorales_resume_2026.pdf" target="_blank" rel="noopener noreferrer">resume</a></li>
       <li><a href="#contact">connect</a></li>
       <li>
         <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Toggle light / dark theme">
