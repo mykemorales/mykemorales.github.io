@@ -305,6 +305,70 @@
       background-size: 100% 1.5px;
     }
 
+    /* ── INTRAFLECT TEASER TOOLTIP ── */
+    .teaser {
+      position: relative;
+      display: inline-block;
+      cursor: default;
+      outline: none;
+    }
+
+    .teaser strong {
+      background-image: linear-gradient(var(--ember), var(--ember));
+      background-position: 0 52%;
+      background-repeat: no-repeat;
+      background-size: 0% 1.5px;
+      transition: color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                  background-size 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .teaser:hover strong,
+    .teaser:focus-visible strong {
+      color: var(--ember);
+      background-size: 100% 1.5px;
+    }
+
+    .teaser__tip {
+      position: absolute;
+      bottom: calc(100% + 10px);
+      left: 50%;
+      transform: translate(-50%, 4px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 20px 12px;
+      border-radius: 8px;
+      background: var(--black-hole);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      z-index: 20;
+    }
+
+    .teaser__tip img {
+      display: block;
+      width: 160px;
+      height: auto;
+    }
+
+    .about .teaser__soon {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      line-height: 1;
+      color: var(--ember);
+      white-space: nowrap;
+    }
+
+    .teaser:hover .teaser__tip,
+    .teaser:focus .teaser__tip {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
     /* ── PROJECTS ── */
     .projects {
       border-top: 1px solid var(--color-border);
@@ -553,7 +617,7 @@
 
     <!-- ABOUT -->
     <section class="about" id="about">
-      <p>Currently, I am building <strong>intraflect</strong>.</p>
+      <p>Currently, I am building <span class="teaser" tabindex="0" aria-describedby="intraflect-tip"><strong>intraflect</strong><span class="teaser__tip" id="intraflect-tip" role="tooltip"><img src="intraflect-logo.png" alt="intraflect" width="160" height="30"><span class="teaser__soon">coming soon</span></span></span>.</p>
       <p>Previously, I was a Senior Product Designer at <a href="https://www.mckinsey.com" target="_blank" rel="noopener">McKinsey &amp; Co</a> and mentored Product Designers through <a href="https://careerfoundry.com/en/" target="_blank" rel="noopener">CareerFoundry</a>. I led design for the Business Process Automation platform Impress at <a href="https://www.quadient.com" target="_blank" rel="noopener">Quadient</a>. Before that, I was building municipal websites with <a href="https://webhouse.cz" target="_blank" rel="noopener">WEBHOUSE</a> and commercial websites with <a href="https://www.kreatorium.cz" target="_blank" rel="noopener">Kreatorium</a>.</p>
     </section>
 
