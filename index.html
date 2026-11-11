@@ -20,7 +20,7 @@
       } catch (e) {}
     })();
   </script>
-  <title>Mike Morales — Senior Product Designer</title>
+  <title>Mike Morales — Product Design Engineer</title>
   <link rel="icon" type="image/png" href="favicon.png?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -286,7 +286,8 @@
       margin-bottom: 0;
     }
 
-    .about a {
+    .about a,
+    .projects a {
       color: var(--color-link);
       font-weight: var(--link-weight);
       text-decoration: none;
@@ -298,9 +299,44 @@
                   background-size 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
 
-    .about a:hover {
+    .about a:hover,
+    .projects a:hover {
       color: var(--ember);
       background-size: 100% 1.5px;
+    }
+
+    /* ── PROJECTS ── */
+    .projects {
+      border-top: 1px solid var(--color-border);
+      padding-top: 72px;
+      padding-bottom: 72px;
+      scroll-margin-top: 80px;
+    }
+
+    .projects__label {
+      font-size: 16px;
+      color: var(--color-label);
+      margin-bottom: 8px;
+    }
+
+    .project-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .project-list li {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--color-body);
+    }
+
+    .about strong {
+      font-weight: 700;
+      color: var(--color-link);
     }
 
     /* ── CTA / CONTACT ── */
@@ -512,13 +548,21 @@
     <!-- HERO -->
     <section class="hero">
       <p class="hero__name">Mike Morales</p>
-      <p class="hero__role">Product Designer · Enterprise systems specialist</p>
+      <p class="hero__role">Product Design Engineer</p>
     </section>
 
     <!-- ABOUT -->
     <section class="about" id="about">
-      <p>Currently, I'm at <a href="https://www.mckinsey.com" target="_blank" rel="noopener">McKinsey &amp; Co</a> as a Senior Product Designer.</p>
-      <p>Previously, I mentored Product Designers through <a href="https://careerfoundry.com/en/" target="_blank" rel="noopener">CareerFoundry</a>. I led design for the Business Process Automation platform Impress at <a href="https://www.quadient.com" target="_blank" rel="noopener">Quadient</a>. Before that, I was a building municipal websites with <a href="https://webhouse.cz" target="_blank" rel="noopener">WEBHOUSE</a> and commercial websites with <a href="https://www.kreatorium.cz" target="_blank" rel="noopener">Kreatorium</a>.</p>
+      <p>Currently, I am building <strong>intraflect</strong>.</p>
+      <p>Previously, I was a Senior Product Designer at <a href="https://www.mckinsey.com" target="_blank" rel="noopener">McKinsey &amp; Co</a> and mentored Product Designers through <a href="https://careerfoundry.com/en/" target="_blank" rel="noopener">CareerFoundry</a>. I led design for the Business Process Automation platform Impress at <a href="https://www.quadient.com" target="_blank" rel="noopener">Quadient</a>. Before that, I was building municipal websites with <a href="https://webhouse.cz" target="_blank" rel="noopener">WEBHOUSE</a> and commercial websites with <a href="https://www.kreatorium.cz" target="_blank" rel="noopener">Kreatorium</a>.</p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <p class="projects__label">Projects</p>
+      <ul class="project-list">
+        <li><a href="https://terradial.net" target="_blank" rel="noopener">TerraDial</a> <span class="project-list__desc">— the globe as a radio dial. Give it a spin.</span></li>
+      </ul>
     </section>
 
     <!-- CTA / CONTACT -->
